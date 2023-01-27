@@ -20,7 +20,7 @@ public @interface ServletHandler {
     /**
      * Controller或其方法所处理的请求的访问路径，没有检查是否有重复
      */
-    String[] urlPatterns();
+    String[] urlPatterns() default {};
 
     /**
      * 请求方式，默认支持4种常见的请求方式。HTTP请求一共有8个
